@@ -29,8 +29,8 @@ public class Conexao {
 	}
 
 	private static void setDataBaseConfig() {
-		jdbcUrl = "jdbc:oracle:thin:@localhost:1521:local";
-		jdbcDriver = "oracle.jdbc.OracleDriver";
+		jdbcUrl = "jdbc:mysql://localhost/loja";
+		jdbcDriver = "com.mysql.jdbc.Driver";
 		user = "root";
 		password = "senha";
 	}
