@@ -9,6 +9,37 @@
 <title>Teste</title>
 </head>
 <body>
-<h:outputText value="#{controleLojaAction.messagem}"/>
+	<h:form id="form">
+		<table width="100%">
+			<tr>
+				<td colspan="2" align="center"><ui:insert name="cabecalho">
+						<h1>Cadastro de Empresas</h1>
+					</ui:insert></td>
+			</tr>
+			<tr>
+				<td width="200px" valign="top"><ui:insert name="menu">
+						<h1>Menu</h1>
+						<h:panelGrid columns="1">
+							<h:commandLink value="Cadastro de Empresa" />
+						</h:panelGrid>
+					</ui:insert></td>
+				<td>
+					<h1>Cadastro de Empresa</h1> <h:panelGrid id="dadosEmpresa"
+						columns="2">
+						<h:outputText id="nomeText" value="Nome:" />
+						<h:inputText id="nome" label="Nome"
+							value="" maxlength="200" size="100" />
+						<h:outputText id="cpfText" value="CNPJ" />
+						<h:inputText id="cpf" label="CNPJ" value=""
+							maxlength="14" size="20" />
+						<h:outputText id="endereco" value="Endereco:" />
+						<h:inputText id="enderecoInput" label="Endereco"
+							value="" maxlength="50" size="50" />
+					
+					</h:panelGrid>
+				</td>
+			</tr>
+		</table>
+	</h:form>
 </body>
 </html>

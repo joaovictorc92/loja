@@ -4,4 +4,6 @@ public class IControleLojaAction {
 	public String getMessagem(){
 		return "TESTANDO MAPEAMENTO";
 	}
+	
+	
 }
